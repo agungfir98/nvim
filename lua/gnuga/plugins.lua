@@ -11,10 +11,8 @@ packer.startup(function(use)
 
 	use "folke/tokyonight.nvim" -- neovim tema
 
-	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { "nvim-tree/nvim-web-devicons", opt = true }
-	} -- Lualine status bar
+	use "nvim-tree/nvim-web-devicons"
+	use "nvim-lualine/lualine.nvim"
 
 	use {
 		"williamboman/mason.nvim",
@@ -35,5 +33,7 @@ packer.startup(function(use)
 	use "nvim-telescope/telescope.nvim"
 
 	use "lewis6991/gitsigns.nvim"
+
+	use "akinsho/bufferline.nvim"
 
 end)
