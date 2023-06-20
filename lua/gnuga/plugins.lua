@@ -14,6 +14,8 @@ packer.startup(function(use)
 	use "nvim-tree/nvim-web-devicons"
 	use "nvim-lualine/lualine.nvim"
 
+	use "nvim-tree/nvim-tree.lua"
+
 	use {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
@@ -31,9 +33,14 @@ packer.startup(function(use)
 
 	use "nvim-lua/plenary.nvim"
 	use "nvim-telescope/telescope.nvim"
+	use "nvim-telescope/telescope-file-browser.nvim"
 
 	use "lewis6991/gitsigns.nvim"
 
 	use "akinsho/bufferline.nvim"
 
+	use "nvim-treesitter/nvim-treesitter"
+
+	use "windwp/nvim-autopairs" --nvim autopairs
+	use "windwp/nvim-ts-autotag"
 end)

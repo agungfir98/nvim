@@ -2,7 +2,11 @@ vim.cmd('autocmd!')
 
 vim.wo.number = true
 
+local g = vim.g
 local vo = vim.opt
+
+g.mapleader = " "
+g.maplocalleader = " "
 
 vo.autoindent = true
 vo.title = true
@@ -13,3 +17,4 @@ vo.showcmd = true
 vo.hlsearch = true
 vo.smartindent = true
 vo.cmdheight = 1
+
