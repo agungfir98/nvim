@@ -1,11 +1,12 @@
-require('tokyonight').setup({
-	transparent = true,
-	terminal_colors = true
+require('onedarkpro').setup({
+	options = {
+		transparency = true
+	}
 })
 require('lualine').setup {
 	options = {
-		theme = 'tokyonight'
+		theme = 'onedark'
 	}
 }
 
-vim.cmd "colorscheme tokyonight-night"
+vim.cmd "colorscheme onedark"

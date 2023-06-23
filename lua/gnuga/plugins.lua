@@ -9,7 +9,7 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
 	use "wbthomason/packer.nvim"
 
-	use "folke/tokyonight.nvim" -- neovim tema
+	use "olimorris/onedarkpro.nvim" -- neovim tema
 
 	use "nvim-tree/nvim-web-devicons"
 	use "nvim-lualine/lualine.nvim"
@@ -43,4 +43,7 @@ packer.startup(function(use)
 
 	use "windwp/nvim-autopairs" --nvim autopairs
 	use "windwp/nvim-ts-autotag"
+
+	use "lukas-reineke/indent-blankline.nvim"
+
 end)
