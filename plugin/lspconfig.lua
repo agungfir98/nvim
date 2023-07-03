@@ -10,6 +10,7 @@ require('mason-lspconfig').setup({
 		"html",
 		"cssls",
 		"tailwindcss",
+		"astro",
 	}
 })
 
@@ -19,7 +20,7 @@ local on_attach = function(_,_)
 
 	vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
 	vim.keymap.set('n', '<leader>gi', vim.lsp.buf.implementation, {})
-	vim.keymap.set('n', '<leader>rn', require('telescope.builtin').lsp_reference, {})
+	vim.keymap.set('n', '<leader>rf', require('telescope.builtin').lsp_reference, {})
 	vim.keymap.set('n', '<leader>k', vim.lsp.buf.hover, {})
 end
 
@@ -39,3 +40,7 @@ nvim_lsp.html.setup {
 }
 nvim_lsp.cssls.setup {}
 nvim_lsp.tailwindcss.setup {}
+nvim_lsp.astro.setup {
+	nn_attach = on_attach,
+	capabilities =  capabilities,
+}
