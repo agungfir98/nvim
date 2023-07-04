@@ -46,4 +46,9 @@ packer.startup(function(use)
 
 	use "lukas-reineke/indent-blankline.nvim"
 
+	use "MunifTanjim/prettier.nvim" -- Plugin for neovim built in LSP client
+	use "jose-elias-alvarez/null-ls.nvim" -- Nvim language server to inject LSP diagnostic, code actions and so on via lua.
+
+	use "terrortylor/nvim-comment"
+
 end)
