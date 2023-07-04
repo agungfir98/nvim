@@ -29,6 +29,13 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 nvim_lsp.lua_ls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
+	settings = {
+		Lua = {
+			diagnostics = {
+				globals = { 'vim', }
+			}
+		}
+	}
 }
 nvim_lsp.tsserver.setup {
 	on_attach = on_attach,
