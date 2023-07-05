@@ -19,8 +19,10 @@ packer.startup(function(use)
 	use {
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		"neovim/nvim-lspconfig"
+		"neovim/nvim-lspconfig",
 	} -- LSP package
+
+	use "glepnir/lspsaga.nvim"
 
 	use {
 		"hrsh7th/nvim-cmp",
