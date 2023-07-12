@@ -53,4 +53,6 @@ packer.startup(function(use)
 
 	use "terrortylor/nvim-comment"
 
+	use "norcalli/nvim-colorizer.lua"
+
 end)
