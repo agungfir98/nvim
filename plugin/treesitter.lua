@@ -18,7 +18,7 @@ treesitter.setup {
 		disable = {}
 	},
 
-	ensure_installed = { "javascript", "typescript", "html", "css", "python", "vim", "lua", "tsx", "astro"},
+	ensure_installed = { "javascript", "typescript", "html", "css", "python", "vim", "lua", "tsx", "astro", "dockerfile", "php"},
 
 	sync_install = true,
 	auto_install = true,
